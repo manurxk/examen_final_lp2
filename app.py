@@ -35,7 +35,7 @@ def guardarMateria():
        # mostrar un mensaje al usuario
        flash('Debe escribir algo en la descripcion', 'warning')
     
-       # redireccionar a la vista ciudades
+       # redireccionar a la vista materias
        return redirect(url_for('materias'))
     
     materiadao = MateriaDao()
@@ -44,7 +44,7 @@ def guardarMateria():
     # mostrar un mensaje al usuario
     flash('Guardado exitoso', 'success')
 
-    # redireccionar a la vista ciudades 
+    # redireccionar a la vista materias
     return redirect(url_for('materias_index'))
 
 @app.route('/materias-editar/<id>')
